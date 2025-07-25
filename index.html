@@ -13,75 +13,135 @@
     <title>HTML Forms</title>
   </head>
   <body>
-    <form action="/" method="GET">
-      <label for="username">Your Name</label>
-      <input type="text" name="user-name" id="username" />
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
 
-      <label for="yourmessage">Your message</label>
-      <textarea name="message" id="yourmessage" name="user-message"></textarea>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>Your personal details</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" />
+            </li>
+            <li>
+              <label for="useremail">Your Email address</label>
+              <input type="email" id="useremail" />
+            </li>
+            <li>
+              <label for="userpassword">Your Password</label>
+              <input type="password" id="userpassword" name="user-password" />
+            </li>
+          </ul>
+        </section>
 
-      <label for="useremail">Your Email address</label>
-      <input type="email" id="useremail" />
+        <section>
+          <h2>More Details</h2>
+          <ul>
+            <li>
+              <label for="userage">Your age</label>
+              <input type="number" step="1" id="userage" name="user-age" />
+            </li>
+            <li>
+              <label for="userdob">Your Date of Birth</label>
+              <input type="date" id="userdob" name="user-dob" />
+            </li>
+            <li>
+              <label for="usercountry">Your Country</label>
+              <select id="usercountry" name="user-country">
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+                <option value="in">India</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
 
-      <label for="userage">Your age</label>
-      <input type="number" step="1" id="userage" name="user-age" />
+        <section>
+          <label for="yourmessage">Your message</label>
+          <textarea
+            name="message"
+            id="yourmessage"
+            name="user-message"
+          ></textarea>
+        </section>
 
-      <label for="userpassword">Your Password</label>
-      <input type="password" id="userpassword" name="user-password" />
+        <section>
+          <h2>How should we verify your Account?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-message"
+                value="text-message"
+              />
+              <label for="verify-text-message">Via Text message (SMS)</label>
+            </li>
 
-      <label for="userdob">Your Date of Birth</label>
-      <input type="date" id="userdob" name="user-dob" />
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="verify-email"
+                name="verify"
+                value="verifyemail"
+              />
+              <label for="verify-email">Contact me via email</label>
+            </li>
 
-      <hr />
-      
-      <label for="usercountry">Your Country</label>
-      <select id="usercountry" name="user-country">
-        <option value="us">United States</option>
-        <option value="uk">United Kingdom</option>
-        <option value="ca">Canada</option>
-        <option value="au">Australia</option>
-        <option value="in">India</option>
-        <option value="other">Other</option>
-      </select>
+            <li class="form-control-inline">
+              <input
+                type="checkbox"
+                id="verify-phone"
+                name="verify"
+                value="verifyphone"
+              />
+              <label for="verify-phone">Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
 
-      <h2>How should we verify your Account?</h2>
-
-      <div class="form-control-inline">
-        <input
-          type="radio"
-          name="verify"
-          id="verify-text-message"
-          value="text-message"
-        />
-        <label for="verify-text-message">Via Text message (SMS)</label>
-      </div>
-
-      <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-phone" value="phone" />
-        <label for="verify-phone">Via a phone call</label>
-      </div>
-
-      <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-email" value="email" />
-        <label for="verify-email">Via an email</label>
-      </div>
-
-      <div class="form-control-inline">
-        <input type="checkbox" id="agree-terms" name="terms"/>
-        <label for="agree-terms">Agree to terms?</label>
-      </div>
-
-      <div class="form-control-inline">
-        <input type="checkbox" id="contact-email" name="contact" value="email"/>
-        <label for="contact-email">Contact me via email</label>
-      </div>
-
-      <div class="form-control-inline">
-        <input type="checkbox" id="contact-phone" name="contact" value="phone"/>
-        <label for="contact-phone">Contact me via phone</label>
-      </div>
-
-      <button>Submit</button>
-    </form>
+        
+        <section>
+          <h2>How should we contact you?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+              type="checkbox"
+              id="contact-email"
+              name="contact-method"
+              value="email"
+              />
+              <label for="contact-email">Email</label>
+            </li>
+            <li>
+              <input
+              type="checkbox"
+              id="contact-phone"
+              name="contact-method"
+              value="phone"
+              />
+              <label for="contact-phone">Phone</label>
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to terms?</label>
+          </div>
+        </section>
+        
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
