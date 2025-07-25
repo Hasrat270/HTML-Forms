@@ -26,6 +26,7 @@ textarea {
     border-radius: 4px;
     padding: 0.25rem;
     color: rgb(61, 63, 65);
+    resize: vertical;
 }
 
 input:focus,
