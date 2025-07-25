@@ -72,65 +72,57 @@
         </section>
 
         <section>
-          <h2>How should we verify your Account?</h2>
-          <ul>
-            <li class="form-control-inline">
-              <input
-                type="radio"
-                name="verify"
-                id="verify-text-message"
-                value="text-message"
-              />
-              <label for="verify-text-message">Via Text message (SMS)</label>
-            </li>
+  <h2>How should we verify your Account?</h2>
+  <ul>
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="verify-email"
+        name="verify-method"
+        value="email"
+      />
+      <label for="verify-email">Contact me via email</label>
+    </li>
 
-            <li class="form-control-inline">
-              <input
-                type="checkbox"
-                id="verify-email"
-                name="verify"
-                value="verifyemail"
-              />
-              <label for="verify-email">Contact me via email</label>
-            </li>
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="verify-phone"
+        name="verify-method"
+        value="phone"
+      />
+      <label for="verify-phone">Contact me via phone</label>
+    </li>
+  </ul>
+</section>
 
-            <li class="form-control-inline">
-              <input
-                type="checkbox"
-                id="verify-phone"
-                name="verify"
-                value="verifyphone"
-              />
-              <label for="verify-phone">Contact me via phone</label>
-            </li>
-          </ul>
-        </section>
+<section>
+  <h2>How should we contact you?</h2>
+  <ul>
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="contact-email"
+        name="contact-method"
+        value="email"
+      />
+      <label for="contact-email">Email</label>
+    </li>
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="contact-phone"
+        name="contact-method"
+        value="phone"
+      />
+      <label for="contact-phone">Phone</label>
+    </li>
+  </ul>
+</section>
 
-        
-        <section>
-          <h2>How should we contact you?</h2>
-          <ul>
-            <li class="form-control-inline">
-              <input
-              type="checkbox"
-              id="contact-email"
-              name="contact-method"
-              value="email"
-              />
-              <label for="contact-email">Email</label>
-            </li>
-            <li>
-              <input
-              type="checkbox"
-              id="contact-phone"
-              name="contact-method"
-              value="phone"
-              />
-              <label for="contact-phone">Phone</label>
-            </li>
-          </ul>
-        </section>
-        
+
+        <hr>
+
         <section>
           <div class="form-control-inline">
             <input type="checkbox" id="agree-terms" name="terms" />
