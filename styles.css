@@ -51,4 +51,12 @@ button:hover {
 
 }
 
+.form-control-inline {
+    display: flex;
+}
 
+.form-control-inline input {
+    width: auto;
+    margin: 0.5rem;
+    
+}
