@@ -32,7 +32,7 @@
             </li>
             <li>
               <label for="userpassword">Your Password</label>
-              <input type="password" id="userpassword" name="user-password" required minlength="8" />
+              <input type="password" id="userpassword" name="user-password" required placeholder="Enter your password" />
             </li>
           </ul>
         </section>
@@ -42,11 +42,11 @@
           <ul>
             <li>
               <label for="userage">Your age</label>
-              <input type="number" step="1" id="userage" name="user-age" />
+              <input type="number" step="1" id="userage" name="user-age" required min="18" max="100 />
             </li>
             <li>
               <label for="userdob">Your Date of Birth</label>
-              <input type="date" id="userdob" name="user-dob" />
+              <input type="date" id="userdob" name="user-dob" min="2007-07-26" />
             </li>
             <li>
               <label for="usercountry">Your Country</label>
